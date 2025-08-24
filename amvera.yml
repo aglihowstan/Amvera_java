@@ -1,0 +1,17 @@
+---
+version: null
+meta:
+  environment: jvm
+  toolchain:
+    name: maven
+    version: 17
+build:
+  image: null
+  args: null
+  artifacts:
+    target/*.jar: /
+run:
+  image: null
+  jarName: GetRequestExample-1.0-SNAPSHOT-jar-with-dependencies.jar
+  persistenceMount: /data
+  containerPort: 80
